@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        function navigateSlide(slideNumber){
+            document.querySelector('.dot.active').classList.remove('active');
+            document.querySelector(`.dot:nth-child(${slideNumber})`).classList.add('active');
+            console.log('slideNumber', slideNumber);
+            const transformValue = slideNumber * 100;
+            document.querySelector('.slider').style.transform = `translateX(-${transformValue}%)`;
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="slider">
+            <div class="slide-1">
+                <img class="star-up" src="star-up.jpg" alt="" width="30">
+                <p class="fastacy">Fastacy</p>
+                <div class="dash-container">
+                    <img class="land-image" src="dress2.webp" alt="" >
+                    <p class="classy">
+                        Classy <br>Fashion<img class="star-down" src="star-down.jpg" alt="">
+                    </p>
+                </div>
+            </div>
+            <div class="slide-1">
+                <img class="star-up" src="star-up.jpg" alt="" width="30">
+                <p class="fastacy">Fastacy</p>
+                <div class="dash-container">
+                    <img class="land-image" src="dress2.webp" alt="" >
+                    <p class="classy">
+                        Classy <br>Fashion<img class="star-down" src="star-down.jpg" alt="">
+                    </p>
+                </div>
+            </div>
+            <div class="slide-1">
+                <img class="star-up" src="star-up.jpg" alt="" width="30">
+                <p class="fastacy">Fastacy</p>
+                <div class="dash-container">
+                    <img class="land-image" src="dress2.webp" alt="" >
+                    <p class="classy">
+                        Classy <br>Fashion<img class="star-down" src="star-down.jpg" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="slider-navigation">
+            <button class="dot active" onclick="navigateSlide(0);"></button>
+            <button class="dot" onclick="navigateSlide(1);"></button>
+            <button class="dot" onclick="navigateSlide(2);"></button>
+        </div>
+    </div>
+    
+    <div class="footer-wraper">
+        <div class="footer">
+            <a href="" class="text">Tops</a>
+            <a href="" class="text">T-Shirts !</a>
+            <a href="" class="text">Hoodies</a>
+            <a href="#" class="text-underline">126+Categories</a>
+        </div>
+        <a class="link" href="page2.html"> 
+         Sign up <i class="arrow" data-feather="arrow-right"></i>
+        </a>
+    </div>
+    
+
+    <script>
+        feather.replace()
+      </script> 
+
+</body>
+</html>

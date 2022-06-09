@@ -1,0 +1,152 @@
+.main {
+    display: block;
+}
+
+.slider {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    transform: translateX(0);
+    transition: transform 0.2s;
+    gap: 50px;
+}
+
+.slide-1 {
+    width: 100%;
+    transform: rotate(-15deg);
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: none;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: black;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+
+
+.land-image {
+    display: block;
+    padding-bottom: 0px;
+    /*padding-right: 100px;*/
+    width: 100%;
+    /*transform: rotate(-15deg);*/
+    border: none;
+    transform: translateY(-40px);
+    /*margin-top: -50px;*/
+}
+
+.dash-container {
+    background-color: red;
+    border: 10px dotted green;
+    padding:  10px;
+}
+
+.star-up{
+    justify-content: flex-end;
+}
+
+.fastacy {
+    /*transform: rotate(-15deg);*/
+    /*padding-left: 500px;*/
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Yellowtail', cursive;
+    font-weight: 700;
+    font-size: 55px;
+}
+
+.classy {
+    transform: rotate(15deg);
+    /*padding-left: 700px;*/
+    /*padding-bottom: 80px;*/
+    font-family: 'Yellowtail', cursive;
+    font-size: 40px;
+}
+
+.fashion{
+    padding-left: 550px;
+    padding-bottom: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 75px;
+}
+
+.star-down{
+    /*padding-left: 990px;*/
+    width: 1em;
+    margin-left: 0.5em;
+}
+
+.star-up{
+    /*padding-left: 850px;*/
+}
+
+.link {
+    background-color: #171a17; 
+    border: none;
+    color: white;
+    padding: 15px 30px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 200px;
+    justify-content: center;
+    display: flex;
+    transition: width 0.2s, font-size 0.2s;
+   
+}
+
+.link:hover {
+    background-color: red;
+    width: 250px;
+    font-size: 22px;
+}
+
+.footer {
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.text {
+    margin-bottom: 2px ;
+    display: block;
+    text-decoration:none;
+   
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.arrow {
+    margin-left: 15px;
+   
+}
+
+.footer-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
